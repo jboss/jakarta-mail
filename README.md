@@ -1,3 +1,12 @@
+JBoss Jakarta Mail
+==================================
+
+What is this
+-----------------------
+
+This is fork of Jakarta Mail api project: https://github.com/eclipse-ee4j/mail
+
+
 # Jakarta Mail
 
 [![Build Status](https://github.com/eclipse-ee4j/mail/actions/workflows/maven.yml/badge.svg?branch=master)](https://github.com/eclipse-ee4j/mail/actions/workflows/maven.yml?branch=master)

@@ -21,28 +21,28 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
     <parent>
-        <groupId>org.eclipse.ee4j</groupId>
-        <artifactId>project</artifactId>
-        <version>1.0.7</version>
-        <relativePath/>
+        <groupId>org.jboss</groupId>
+        <artifactId>jboss-parent</artifactId>
+        <version>39</version>
     </parent>
 
     <modelVersion>4.0.0</modelVersion>
     <groupId>jakarta.mail</groupId>
     <artifactId>jakarta.mail-api</artifactId>
-    <version>2.1.1-SNAPSHOT</version>
-    <name>Jakarta Mail API</name>
+    <version>2.1.1-SNAPSHOT-jbossorg-1</version>
+    <name>Jboss Jakarta Mail API</name>
     <description>${project.name} ${spec.version} Specification API</description>
 
     <scm>
-        <connection>scm:git:ssh://git@github.com/eclipse-ee4j/mail.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com/eclipse-ee4j/mail.git</developerConnection>
-        <url>https://github.com/eclipse-ee4j/mail</url>
+        <connection>scm:git:git@github.com:jboss/jakarta-mail.git</connection>
+        <developerConnection>scm:git:git@github.com:jboss/jakarta-mail.git</developerConnection>
+        <url>https://github.com/jboss/jakarta-mail</url>
+        <tag>HEAD</tag>
     </scm>
 
     <issueManagement>
-        <system>GitHub</system>
-        <url>https://github.com/eclipse-ee4j/mail/issues</url>
+        <system>JIRA</system>
+        <url>https://issues.jboss.org/projects/JBEE/issues</url>
     </issueManagement>
 
     <licenses>
@@ -66,6 +66,7 @@
     <properties>
         <spec.version>2.1</spec.version>
         <spec.title>Jakarta Mail Specification</spec.title>
+        <vendor.name>Eclipse Foundation</vendor.name>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <javadoc.title>Jakarta Mail API documentation</javadoc.title>
         <legal.doc.source>${project.basedir}/..</legal.doc.source>
@@ -348,13 +349,15 @@
                     <archive>
                         <manifest>
                             <addDefaultEntries>false</addDefaultEntries>
+                            <addDefaultSpecificationEntries>false</addDefaultSpecificationEntries>
+                            <addDefaultImplementationEntries>false</addDefaultImplementationEntries>
                         </manifest>
                     </archive>
                     <instructions>
                         <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName>
                         <Specification-Title>${spec.title}</Specification-Title>
                         <Specification-Version>${spec.version}</Specification-Version>
-                        <Specification-Vendor>${project.organization.name}</Specification-Vendor>
+                        <Specification-Vendor>${vendor.name}</Specification-Vendor>
                         <Extension-Name>${project.groupId}</Extension-Name>
                         <Implementation-Title>${project.name}</Implementation-Title>
                         <Implementation-Vendor>${project.organization.name}</Implementation-Vendor>
