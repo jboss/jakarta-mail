@@ -28,7 +28,7 @@
 
     <groupId>jakarta.mail</groupId>
     <artifactId>jakarta.mail-api-aggregator</artifactId>
-    <version>2.1.1.jbossorg-1</version>
+    <version>2.1.2-SNAPSHOT-jbossorg-1</version>
     <packaging>pom</packaging>
 
     <name>Jboss Jakarta Mail API aggregator</name>
